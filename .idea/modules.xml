@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FashionConcierge.iml" filepath="$PROJECT_DIR$/FashionConcierge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bleshSDKLib/bleshSDKLib.iml" filepath="$PROJECT_DIR$/bleshSDKLib/bleshSDKLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core-sdk-lib-release/core-sdk-lib-release.iml" filepath="$PROJECT_DIR$/core-sdk-lib-release/core-sdk-lib-release.iml" />
+    </modules>
+  </component>
+</project>
+

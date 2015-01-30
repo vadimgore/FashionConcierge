@@ -1,0 +1,2 @@
+include ':app', ':core-sdk-lib-release'
+include ':bleshSDKLib'

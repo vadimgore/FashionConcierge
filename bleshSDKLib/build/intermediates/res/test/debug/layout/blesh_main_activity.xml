@@ -1,0 +1,14 @@
+<android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bleshPager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BleshMainActivity" >
+
+    <!--
+    This title strip will display the currently visible page title, as well as the page
+    titles for adjacent pages.
+    -->
+
+</android.support.v4.view.ViewPager>
+<!-- From: file:/C:/Users/vgore/AndroidStudioProjects/Intel-Projects/FashionConcierge/bleshSDKLib/src/main/res/layout/blesh_main_activity.xml --><!-- From: file:/C:/Users/vgore/AndroidStudioProjects/Intel-Projects/FashionConcierge/bleshSDKLib/build/intermediates/bundles/debug/res/layout/blesh_main_activity.xml -->

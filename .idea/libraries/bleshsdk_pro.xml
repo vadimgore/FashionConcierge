@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="bleshsdk_pro">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bleshSDKLib/libs/bleshsdk_pro.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
