@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="21.0.3"><source path="C:\Users\vgore\AndroidStudioProjects\Intel-Projects\FashionConcierge\bleshSDKLib\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\res"/></dataSet><dataSet config="main"><source path="C:\Users\vgore\AndroidStudioProjects\Intel-Projects\FashionConcierge\bleshSDKLib\src\main\res"><file name="slide_in_up" path="C:\Users\vgore\AndroidStudioProjects\Intel-Projects\FashionConcierge\bleshSDKLib\src\main\res\anim\slide_in_up.xml" qualifiers="" type="anim"/><file name="slide_out_up" path="C:\Users\vgore\AndroidStudioProjects\Intel-Projects\FashionConcierge\bleshSDKLib\src\main\res\anim\slide_out_up.xml" qualifiers="" type="anim"/><file name="info" path="C:\Users\vgore\AndroidStudioProjects\Intel-Projects\FashionConcierge\bleshSDKLib\src\main\res\drawable\info.png" qualifiers="" type="drawable"/><file name="blesh_fragment_listview_item" path="C:\Users\vgore\AndroidStudioProjects\Intel-Projects\FashionConcierge\bleshSDKLib\src\main\res\layout\blesh_fragment_listview_item.xml" qualifiers="" type="layout"/><file name="blesh_main_activity" path="C:\Users\vgore\AndroidStudioProjects\Intel-Projects\FashionConcierge\bleshSDKLib\src\main\res\layout\blesh_main_activity.xml" qualifiers="" type="layout"/><file name="blesh_main_fragment" path="C:\Users\vgore\AndroidStudioProjects\Intel-Projects\FashionConcierge\bleshSDKLib\src\main\res\layout\blesh_main_fragment.xml" qualifiers="" type="layout"/><file name="blesh_menu" path="C:\Users\vgore\AndroidStudioProjects\Intel-Projects\FashionConcierge\bleshSDKLib\src\main\res\menu\blesh_menu.xml" qualifiers="" type="menu"/><file path="C:\Users\vgore\AndroidStudioProjects\Intel-Projects\FashionConcierge\bleshSDKLib\src\main\res\values\colors.xml" qualifiers=""><color name="BLESHCOLOR_blackOverlay">#44000000</color></file><file path="C:\Users\vgore\AndroidStudioProjects\Intel-Projects\FashionConcierge\bleshSDKLib\src\main\res\values\strings.xml" qualifiers=""><string name="blesh_menu_item_save_to_gallery">Ekran görüntüsü kaydet</string><string name="blesh_menu_item_show">Tekrar göster</string><string name="blesh_menu_item_hide">Tekrar gösterme</string></file><file path="C:\Users\vgore\AndroidStudioProjects\Intel-Projects\FashionConcierge\bleshSDKLib\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
-    </style><style name="ButtonBarButton"/><style name="ButtonBar">
+<merger version="3"><dataSet config="21.0.3"><source path="C:\Users\Vadim\Documents\GitHub\FashionConcierge\bleshSDKLib\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\res"/></dataSet><dataSet config="main"><source path="C:\Users\Vadim\Documents\GitHub\FashionConcierge\bleshSDKLib\src\main\res"><file name="slide_in_up" path="C:\Users\Vadim\Documents\GitHub\FashionConcierge\bleshSDKLib\src\main\res\anim\slide_in_up.xml" qualifiers="" type="anim"/><file name="slide_out_up" path="C:\Users\Vadim\Documents\GitHub\FashionConcierge\bleshSDKLib\src\main\res\anim\slide_out_up.xml" qualifiers="" type="anim"/><file name="info" path="C:\Users\Vadim\Documents\GitHub\FashionConcierge\bleshSDKLib\src\main\res\drawable\info.png" qualifiers="" type="drawable"/><file name="blesh_fragment_listview_item" path="C:\Users\Vadim\Documents\GitHub\FashionConcierge\bleshSDKLib\src\main\res\layout\blesh_fragment_listview_item.xml" qualifiers="" type="layout"/><file name="blesh_main_activity" path="C:\Users\Vadim\Documents\GitHub\FashionConcierge\bleshSDKLib\src\main\res\layout\blesh_main_activity.xml" qualifiers="" type="layout"/><file name="blesh_main_fragment" path="C:\Users\Vadim\Documents\GitHub\FashionConcierge\bleshSDKLib\src\main\res\layout\blesh_main_fragment.xml" qualifiers="" type="layout"/><file name="blesh_menu" path="C:\Users\Vadim\Documents\GitHub\FashionConcierge\bleshSDKLib\src\main\res\menu\blesh_menu.xml" qualifiers="" type="menu"/><file path="C:\Users\Vadim\Documents\GitHub\FashionConcierge\bleshSDKLib\src\main\res\values\colors.xml" qualifiers=""><color name="BLESHCOLOR_blackOverlay">#44000000</color></file><file path="C:\Users\Vadim\Documents\GitHub\FashionConcierge\bleshSDKLib\src\main\res\values\strings.xml" qualifiers=""><string name="blesh_menu_item_save_to_gallery">Ekran görüntüsü kaydet</string><string name="blesh_menu_item_hide">Tekrar gösterme</string><string name="blesh_menu_item_show">Tekrar göster</string></file><file path="C:\Users\Vadim\Documents\GitHub\FashionConcierge\bleshSDKLib\src\main\res\values\styles.xml" qualifiers=""><style name="ButtonBar">
         <item name="android:paddingLeft">2dp</item>
         <item name="android:paddingTop">5dp</item>
         <item name="android:paddingRight">2dp</item>
         <item name="android:paddingBottom">0dp</item>
         <item name="android:background">@android:drawable/bottom_bar</item>
-    </style><style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowBackground">@null</item>
-        <!--item name="buttonBarStyle">@style/ButtonBar</item>
-        <item name="buttonBarButtonStyle">@style/ButtonBarButton</item-->
     </style><style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         -->
-    </style></file><file path="C:\Users\vgore\AndroidStudioProjects\Intel-Projects\FashionConcierge\bleshSDKLib\src\main\res\values-v11\styles.xml" qualifiers="v11"><style name="FullscreenTheme" parent="android:Theme.Holo">
+    </style><style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <!--item name="buttonBarStyle">@style/ButtonBar</item>
+        <item name="buttonBarButtonStyle">@style/ButtonBarButton</item-->
+    </style><style name="ButtonBarButton"/><style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style></file><file path="C:\Users\Vadim\Documents\GitHub\FashionConcierge\bleshSDKLib\src\main\res\values-v11\styles.xml" qualifiers="v11"><style name="FullscreenTheme" parent="android:Theme.Holo">
         <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
         <item name="android:windowActionBarOverlay">true</item>
         <item name="android:windowBackground">@null</item>
         <!--item name="buttonBarStyle">?android:attr/buttonBarStyle</item-->
         <!--item name="buttonBarButtonStyle">?android:attr/buttonBarButtonStyle</item-->
-    </style><style name="AppBaseTheme" parent="android:Theme.Holo.Light">
-        <!-- API 11 theme customizations can go here. -->
     </style><style name="FullscreenActionBarStyle" parent="android:Widget.Holo.ActionBar">
         <item name="android:background">@color/BLESHCOLOR_blackOverlay</item>
-    </style></file><file path="C:\Users\vgore\AndroidStudioProjects\Intel-Projects\FashionConcierge\bleshSDKLib\src\main\res\values-v14\styles.xml" qualifiers="v14"><style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+    </style><style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!-- API 11 theme customizations can go here. -->
+    </style></file><file path="C:\Users\Vadim\Documents\GitHub\FashionConcierge\bleshSDKLib\src\main\res\values-v14\styles.xml" qualifiers="v14"><style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         <!-- API 14 theme customizations can go here. -->
-    </style></file></source><source path="C:\Users\vgore\AndroidStudioProjects\Intel-Projects\FashionConcierge\bleshSDKLib\build\generated\res\rs\release"/><source path="C:\Users\vgore\AndroidStudioProjects\Intel-Projects\FashionConcierge\bleshSDKLib\build\generated\res\generated\release"/></dataSet><dataSet config="release"><source path="C:\Users\vgore\AndroidStudioProjects\Intel-Projects\FashionConcierge\bleshSDKLib\src\release\res"/></dataSet><mergedItems/></merger>
+    </style></file></source><source path="C:\Users\Vadim\Documents\GitHub\FashionConcierge\bleshSDKLib\build\generated\res\rs\release"/><source path="C:\Users\Vadim\Documents\GitHub\FashionConcierge\bleshSDKLib\build\generated\res\generated\release"/></dataSet><dataSet config="release"><source path="C:\Users\Vadim\Documents\GitHub\FashionConcierge\bleshSDKLib\src\release\res"/></dataSet><mergedItems/></merger>
