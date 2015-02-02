@@ -24,7 +24,7 @@ import java.util.EnumSet;
 public class MainActivity extends ActionBarActivity {
     private static final String TAG = "MainActivity";
     private static final int REQUEST_ENABLE_BT = 0;
-    HeartRateCore hrCore = null;
+    //HeartRateCore hrCore = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         enableBluetooth();
-
+/*
         // Define a callback reference to be used by the Blesh service
         // in order to push the user's action results to your application
         BleshTemplateResult result = new BleshTemplateResult() {
@@ -57,6 +57,7 @@ public class MainActivity extends ActionBarActivity {
 
         // Start Blesh service
         startBlesh();
+*/
 /*
         // Initialize HeartRateCore SDK
         HeartRateCoreListener hrListener = new HeartRateCoreListener() {
@@ -79,6 +80,10 @@ public class MainActivity extends ActionBarActivity {
         // Start ListView activity
         //Intent intent = new Intent(this, UserPromptActivity.class);
         //startActivity(intent);
+
+        // Start BLE device scan activity
+        Intent intent = new Intent(this, DeviceScanActivity.class);
+        startActivity(intent);
     }
 
 
@@ -115,8 +120,8 @@ public class MainActivity extends ActionBarActivity {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        hrCore.stop();
-        hrCore.destroy();
+        //hrCore.stop();
+        //hrCore.destroy();
     }
 
     /**
@@ -131,7 +136,7 @@ public class MainActivity extends ActionBarActivity {
             startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
         }
     }
-
+/*
     private void startBlesh() {
         Log.i(TAG, "startBlesh");
 
@@ -144,12 +149,8 @@ public class MainActivity extends ActionBarActivity {
         blesh.putExtra("pushToken", "");
         blesh.putExtra("optionalKey", "5033171751");
 
-        /*
-         * optionalKey ve integrationId should be String
-         * optionalKey is not mandatory while integrationId is
-         */
-
         // Start the Blesh service using the bundle you have just created
         startService(blesh);
     }
+*/
 }

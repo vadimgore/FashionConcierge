@@ -9,7 +9,7 @@
            This should not affect the rest of your application. -->
     <uses-sdk
         android:minSdkVersion="18"
-        android:targetSdkVersion="21" />
+        android:targetSdkVersion="19" />
 
     <!-- Blesh SDK required permissions -->
     <uses-permission android:name="android.permission.INTERNET" />

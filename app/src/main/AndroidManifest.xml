@@ -5,7 +5,7 @@
 
     <uses-sdk
         android:minSdkVersion="18"
-        android:targetSdkVersion="21" />
+        android:targetSdkVersion="19" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
@@ -36,11 +36,12 @@
             android:name=".UserPromptActivity"
             android:label="@string/title_activity_user_prompt" >
         </activity>
-
-        <activity android:name="com.blesh.sdk.activity.BleshMainActivity"
+        <activity
+            android:name="com.blesh.sdk.activity.BleshMainActivity"
             android:exported="true" >
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
+
                 <action android:name="com.blesh.template.normal" />
                 <action android:name="com.blesh.template.push" />
             </intent-filter>
@@ -74,7 +75,21 @@
             android:name="com.blesh.sdk.ibeacon.IBeaconIntentProcessor"
             android:enabled="true" >
         </service>
+        <service
+            android:name=".BluetoothLeService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
 
+        <activity
+            android:name=".DeviceScanActivity"
+            android:label="@string/title_activity_device_scan" >
+        </activity>
+        <activity
+            android:name=".DeviceControlActivity"
+            android:label="@string/title_activity_device_control" >
+            <service android:name=".BluetoothLeService" android:enabled="true"/>
+        </activity>
     </application>
 
 </manifest>
