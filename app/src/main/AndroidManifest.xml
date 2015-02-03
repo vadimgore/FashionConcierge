@@ -75,21 +75,6 @@
             android:name="com.blesh.sdk.ibeacon.IBeaconIntentProcessor"
             android:enabled="true" >
         </service>
-        <service
-            android:name=".BluetoothLeService"
-            android:enabled="true"
-            android:exported="true" >
-        </service>
-
-        <activity
-            android:name=".DeviceScanActivity"
-            android:label="@string/title_activity_device_scan" >
-        </activity>
-        <activity
-            android:name=".DeviceControlActivity"
-            android:label="@string/title_activity_device_control" >
-            <service android:name=".BluetoothLeService" android:enabled="true"/>
-        </activity>
     </application>
 
 </manifest>

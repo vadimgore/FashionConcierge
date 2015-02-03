@@ -32,7 +32,7 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         enableBluetooth();
-/*
+
         // Define a callback reference to be used by the Blesh service
         // in order to push the user's action results to your application
         BleshTemplateResult result = new BleshTemplateResult() {
@@ -57,7 +57,7 @@ public class MainActivity extends ActionBarActivity {
 
         // Start Blesh service
         startBlesh();
-*/
+
 /*
         // Initialize HeartRateCore SDK
         HeartRateCoreListener hrListener = new HeartRateCoreListener() {
@@ -82,8 +82,8 @@ public class MainActivity extends ActionBarActivity {
         //startActivity(intent);
 
         // Start BLE device scan activity
-        Intent intent = new Intent(this, DeviceScanActivity.class);
-        startActivity(intent);
+        //Intent intent = new Intent(this, DeviceScanActivity.class);
+        //startActivity(intent);
     }
 
 
@@ -136,7 +136,7 @@ public class MainActivity extends ActionBarActivity {
             startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
         }
     }
-/*
+
     private void startBlesh() {
         Log.i(TAG, "startBlesh");
 
@@ -152,5 +152,4 @@ public class MainActivity extends ActionBarActivity {
         // Start the Blesh service using the bundle you have just created
         startService(blesh);
     }
-*/
 }
