@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="@color/transparent">
+    android:background="@color/white">
 
     <TextView
         android:id="@+id/user_auth_state"
@@ -13,27 +13,46 @@
         android:layout_marginTop="50px"
         android:text="@string/user_auth_state_ready"
         android:textColor="@color/blue"
-        android:textSize="50px" >
+        android:textSize="70px" >
     </TextView>
 
     <TextView
         android:id="@+id/user_auth_ready"
         android:text="@string/user_auth_start_label"
         android:gravity="center_horizontal"
-        android:layout_marginTop="150px"
-        android:textSize="45px"
+        android:layout_marginTop="50px"
+        android:textSize="60px"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textColor="@color/blue">
     </TextView>
 
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
     <ImageView
         android:id="@+id/user_auth_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="250px">
-        android:gravity="center"
-        android:scaleType="center"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="left"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scaleType="center">
     </ImageView>
 
-</RelativeLayout>
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/graph" />
+
+    </LinearLayout>
+
+</LinearLayout>

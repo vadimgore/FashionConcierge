@@ -1,5 +1,6 @@
 package com.ndg.intel.fashionconcierge;
 
+import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -7,6 +8,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.jjoe64.graphview.GraphView;
+import com.jjoe64.graphview.series.DataPoint;
+import com.jjoe64.graphview.series.LineGraphSeries;
+import com.jjoe64.graphview.series.Series;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -16,6 +22,11 @@ import java.util.UUID;
 
 public class UserAuthActivity extends ActionBarActivity {
 
+    GraphView graph = null;
+    LineGraphSeries<DataPoint> series = null;
+    int i = 0;
+    int j = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +35,29 @@ public class UserAuthActivity extends ActionBarActivity {
         ImageView userAuthImage = (ImageView) findViewById(R.id.user_auth_image);
         userAuthImage.setImageResource(R.drawable.heart);
 
-        final StoreAssociate associate = getStoreAssociate();
+        graph = (GraphView) findViewById(R.id.graph);
+        series = new LineGraphSeries<DataPoint>(new DataPoint[] {
+                new DataPoint(0, 0)
+        });
+
+        graph.addSeries(series);
+
+        final Handler handler = new Handler();
+
+        final Runnable r = new Runnable() {
+            public void run() {
+                i++;
+                j = 0 + (int)(Math.random()*100);
+                series.appendData(new DataPoint(i,j), false, 100);
+                graph.addSeries(series);
+                handler.postDelayed(this, 100);
+            }
+        };
+
+        handler.postDelayed(r, 100);
+
+
+        //final StoreAssociate associate = getStoreAssociate();
 
     }
 

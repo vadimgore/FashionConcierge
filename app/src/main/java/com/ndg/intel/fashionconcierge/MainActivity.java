@@ -58,7 +58,10 @@ public class MainActivity extends ActionBarActivity {
         BleshInstance.sharedInstance().setTemplateResult(result);
 
         // Start Blesh service
-        startBlesh();
+        //startBlesh();
+        Intent userAuth = new Intent(this, UserAuthActivity.class);
+        startActivity(userAuth);
+
 
     }
 
