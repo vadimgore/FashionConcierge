@@ -33,10 +33,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".UserPromptActivity"
-            android:label="@string/title_activity_user_prompt" >
-        </activity>
-        <activity
             android:name="com.blesh.sdk.activity.BleshMainActivity"
             android:exported="true" >
             <intent-filter>
@@ -75,6 +71,11 @@
             android:name="com.blesh.sdk.ibeacon.IBeaconIntentProcessor"
             android:enabled="true" >
         </service>
+
+        <activity
+            android:name=".UserAuthActivity"
+            android:label="@string/title_activity_user_auth" >
+        </activity>
     </application>
 
 </manifest>

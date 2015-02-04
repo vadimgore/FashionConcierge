@@ -1,2 +1,2 @@
-include ':app', ':core-sdk-lib-release'
+include ':app'
 include ':bleshSDKLib'

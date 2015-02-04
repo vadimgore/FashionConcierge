@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/transparent">
+
+    <TextView
+        android:id="@+id/user_auth_state"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50px"
+        android:text="@string/user_auth_state_ready"
+        android:textColor="@color/blue"
+        android:textSize="50px" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/user_auth_ready"
+        android:text="@string/user_auth_start_label"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="150px"
+        android:textSize="45px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/blue">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/user_auth_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250px">
+        android:gravity="center"
+        android:scaleType="center"
+    </ImageView>
+
+</RelativeLayout>

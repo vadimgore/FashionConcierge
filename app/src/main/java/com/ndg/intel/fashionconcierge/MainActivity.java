@@ -15,16 +15,15 @@ import android.widget.Toast;
 import com.blesh.sdk.classes.Blesh;
 import com.blesh.sdk.classes.BleshInstance;
 import com.blesh.sdk.models.BleshTemplateResult;
-import com.intel.heartratecore.api.HeartRateCore;
-import com.intel.heartratecore.api.HeartRateCoreListener;
-import com.intel.heartratecore.api.HeartRateCoreStatus;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.util.EnumSet;
 
 public class MainActivity extends ActionBarActivity {
     private static final String TAG = "MainActivity";
     private static final int REQUEST_ENABLE_BT = 0;
-    //HeartRateCore hrCore = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,8 +41,11 @@ public class MainActivity extends ActionBarActivity {
                     Log.i(TAG, "bleshTemplateResultCallback: action type:" + actionType + " value: " + actionValue);
                     // Check for the action type and value you want to use
                     // You may wish to load a web
-                    String msg = "bleshTemplateResultCallback: action type:" + actionType + " value: " + actionValue;
-                    Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
+                    //String msg = "bleshTemplateResultCallback: action type:" + actionType + " value: " + actionValue;
+                    //Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
+                    if (actionType.equals("URL")) {
+                        startUserAuth(actionValue);
+                    }
                 }
                 else {
                     Log.i(TAG, "bleshTemplateResultCallback: empty action type or value");
@@ -58,32 +60,6 @@ public class MainActivity extends ActionBarActivity {
         // Start Blesh service
         startBlesh();
 
-/*
-        // Initialize HeartRateCore SDK
-        HeartRateCoreListener hrListener = new HeartRateCoreListener() {
-            @Override
-            public void onStatusChanged(@NonNull EnumSet<HeartRateCoreStatus> heartRateCoreStatuses) {
-                Log.i(TAG, "HeartRate: onStatusChanged: status=" + heartRateCoreStatuses);
-                Toast.makeText(getApplicationContext(), "HeartRate: onStatusChanged: status=" + heartRateCoreStatuses, Toast.LENGTH_LONG).show();
-            }
-
-            @Override
-            public void onHeartRateChanged(int i) {
-                Log.i(TAG, "HeartRate: onHeartRateChanged called heartRate=" + i);
-                Toast.makeText(getApplicationContext(), "HeartRate: onHeartRateChanged called heartRate=" + i, Toast.LENGTH_LONG).show();
-            }
-        };
-
-        hrCore = HeartRateCore.getInstance(getBaseContext(), hrListener);
-        hrCore.start();
-*/
-        // Start ListView activity
-        //Intent intent = new Intent(this, UserPromptActivity.class);
-        //startActivity(intent);
-
-        // Start BLE device scan activity
-        //Intent intent = new Intent(this, DeviceScanActivity.class);
-        //startActivity(intent);
     }
 
 
@@ -120,8 +96,6 @@ public class MainActivity extends ActionBarActivity {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        //hrCore.stop();
-        //hrCore.destroy();
     }
 
     /**
@@ -151,5 +125,11 @@ public class MainActivity extends ActionBarActivity {
 
         // Start the Blesh service using the bundle you have just created
         startService(blesh);
+    }
+
+    private void startUserAuth(String actionValue) {
+        Intent userAuth = new Intent(this, UserAuthActivity.class);
+        userAuth.putExtra("JSON", actionValue);
+        startActivity(userAuth);
     }
 }
