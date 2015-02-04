@@ -38,33 +38,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a9e930c-783b-40bf-833d-2028d09e5750" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/heart.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ndg/intel/fashionconcierge/UserAuthActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_auth.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_user_auth.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-      <change type="DELETED" beforePath="C:\Users\Vadim\Documents\GitHub\FashionConcierge\.idea\libraries\appcompat_v7_19_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Vadim\Documents\GitHub\FashionConcierge\.idea\libraries\bleshsdk_pro.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Vadim\Documents\GitHub\FashionConcierge\.idea\libraries\core_sdk_lib_release_unspecified.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Vadim\Documents\GitHub\FashionConcierge\.idea\libraries\gson_2_2_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Vadim\Documents\GitHub\FashionConcierge\.idea\libraries\support_annotations_21_0_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Vadim\Documents\GitHub\FashionConcierge\.idea\libraries\support_v4_21_0_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\src\main\java\com\ndg\intel\fashionconcierge\CustomListViewAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\src\main\java\com\ndg\intel\fashionconcierge\UserPromptActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\src\main\res\layout\activity_user_prompt.xml" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\src\main\res\menu\menu_user_prompt.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_user_auth.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ndg/intel/fashionconcierge/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ndg/intel/fashionconcierge/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ndg/intel/fashionconcierge/StoreAssociate.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ndg/intel/fashionconcierge/StoreAssociate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bleshSDKLib/bleshSDKLib.iml" afterPath="$PROJECT_DIR$/bleshSDKLib/bleshSDKLib.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Fashion Concierge.iws" />
@@ -2256,7 +2229,11 @@
       <created>1422924983608</created>
       <updated>1422924983608</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fashion Concierge&#10;">
+      <created>1423035404292</created>
+      <updated>1423035404292</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
