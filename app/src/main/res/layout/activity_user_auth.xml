@@ -11,14 +11,12 @@
         android:layout_height="match_parent"
         android:gravity="center_horizontal"
         android:layout_marginTop="50px"
-        android:text="@string/user_auth_state_ready"
         android:textColor="@color/blue"
         android:textSize="70px" >
     </TextView>
 
     <TextView
-        android:id="@+id/user_auth_ready"
-        android:text="@string/user_auth_start_label"
+        android:id="@+id/user_auth_msg"
         android:gravity="center_horizontal"
         android:layout_marginTop="50px"
         android:textSize="60px"
@@ -31,17 +29,20 @@
         android:id="@+id/user_auth_image"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="10dp"
         android:layout_gravity="center"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
         android:scaleType="center">
     </ImageView>
 
     <com.jjoe64.graphview.GraphView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center"
+        android:scaleType="center"
         android:id="@+id/graph" />
 
 </LinearLayout>

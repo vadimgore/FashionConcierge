@@ -24,6 +24,7 @@ import java.util.EnumSet;
 public class MainActivity extends ActionBarActivity {
     private static final String TAG = "MainActivity";
     private static final int REQUEST_ENABLE_BT = 0;
+    Intent userAuth = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,10 +60,9 @@ public class MainActivity extends ActionBarActivity {
 
         // Start Blesh service
         //startBlesh();
-        Intent userAuth = new Intent(this, UserAuthActivity.class);
+
+        userAuth = new Intent(this, UserAuthActivity.class);
         startActivity(userAuth);
-
-
     }
 
 
@@ -94,6 +94,8 @@ public class MainActivity extends ActionBarActivity {
         super.onResume();
         // Make sure Bluetooch is enabled
         enableBluetooth();
+
+        startActivity(userAuth);
     }
 
     @Override

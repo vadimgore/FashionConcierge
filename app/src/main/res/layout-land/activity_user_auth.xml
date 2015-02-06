@@ -11,14 +11,12 @@
         android:layout_height="match_parent"
         android:gravity="center_horizontal"
         android:layout_marginTop="50px"
-        android:text="@string/user_auth_state_ready"
         android:textColor="@color/blue"
         android:textSize="70px" >
     </TextView>
 
     <TextView
-        android:id="@+id/user_auth_ready"
-        android:text="@string/user_auth_start_label"
+        android:id="@+id/user_auth_msg"
         android:gravity="center_horizontal"
         android:layout_marginTop="50px"
         android:textSize="60px"

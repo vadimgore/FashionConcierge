@@ -6,9 +6,18 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_user_auth">User Authentication</string>
 
-    <string name="user_auth_state_ready">READY TO AUTHENTICATE</string>
-    <string name="user_auth_start_label">Place your finger on the HRM sensor</string>
-    <string name="user_auth_processing_label">Authenticating...</string>
-    <string name="user_auth_done_label">Authentication complete</string>
+    <string name="user_auth_state_ready">BEGIN AUTHENTICATION</string>
+    <string name="user_auth_ready_msg">Place your finger on the HRM sensor</string>
+
+    <string name="user_auth_state_init">INITIALIZING...</string>
+    <string name="user_auth_init_msg">Keep your finger on the HRM sensor</string>
+
+    <string name="user_auth_state_process">AUTHENTICATING...</string>
+    <string name="user_auth_state_process_msg">Stay still and quite</string>
+
+    <string name="user_auth_state_done">AUTHENTICATION COMPLETE</string>
+    <string name="user_auth_state_done_msg">Take your finger off the HRM sensor</string>
+
+    <string name="user_auth_bpm_profile">user_bpm_profile</string>
 
 </resources>
