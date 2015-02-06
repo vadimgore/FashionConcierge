@@ -42,20 +42,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a9e930c-783b-40bf-833d-2028d09e5750" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Vadim\Documents\GitHub\FashionConcierge\libs\GraphView-4.0.0.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ndg/intel/fashionconcierge/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ndg/intel/fashionconcierge/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ndg/intel/fashionconcierge/UserAuthActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ndg/intel/fashionconcierge/UserAuthActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_auth.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_auth.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_user_auth.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_user_auth.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_20_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_20_0_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bleshSDKLib/bleshSDKLib.iml" afterPath="$PROJECT_DIR$/bleshSDKLib/bleshSDKLib.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle.properties" afterPath="$PROJECT_DIR$/gradle.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Fashion Concierge.iws" />
@@ -101,26 +87,26 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ndg/intel/fashionconcierge/UserAuthActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.7329932" vertical-offset="1898" max-vertical-offset="4658">
-              <caret line="137" column="8" selection-start-line="137" selection-start-column="8" selection-end-line="137" selection-end-column="8" />
+              <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2138#2168#0" expanded="true" />
                 <element signature="e#2268#2296#0" expanded="true" />
-                <element signature="e#5690#5811#0" expanded="true" />
-                <element signature="e#5800#5801#0" expanded="true" />
-                <element signature="e#6240#6272#0" expanded="true" />
-                <element signature="e#6316#6352#0" expanded="true" />
-                <element signature="e#7211#7240#0" expanded="true" />
-                <element signature="e#7280#7313#0" expanded="true" />
-                <element signature="e#7648#7677#0" expanded="true" />
-                <element signature="e#7709#7736#0" expanded="true" />
-                <element signature="e#7791#7792#0" expanded="true" />
-                <element signature="e#7825#7826#0" expanded="true" />
-                <element signature="e#7863#7864#0" expanded="true" />
-                <element signature="e#7898#7899#0" expanded="true" />
-                <element signature="e#8210#8264#0" expanded="true" />
-                <element signature="e#8750#8758#0" expanded="true" />
-                <element signature="e#9035#9089#0" expanded="true" />
+                <element signature="e#5682#5803#0" expanded="true" />
+                <element signature="e#5792#5793#0" expanded="true" />
+                <element signature="e#6232#6264#0" expanded="true" />
+                <element signature="e#6308#6344#0" expanded="true" />
+                <element signature="e#7203#7232#0" expanded="true" />
+                <element signature="e#7272#7305#0" expanded="true" />
+                <element signature="e#7640#7669#0" expanded="true" />
+                <element signature="e#7701#7728#0" expanded="true" />
+                <element signature="e#7783#7784#0" expanded="true" />
+                <element signature="e#7817#7818#0" expanded="true" />
+                <element signature="e#7855#7856#0" expanded="true" />
+                <element signature="e#7890#7891#0" expanded="true" />
+                <element signature="e#8202#8256#0" expanded="true" />
+                <element signature="e#8742#8750#0" expanded="true" />
+                <element signature="e#9027#9081#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2298,7 +2284,11 @@
       <created>1423035411268</created>
       <updated>1423035411268</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fashion Concierge&#10;">
+      <created>1423196208119</created>
+      <updated>1423196208119</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2318,7 +2308,7 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3147942" sideWeight="0.17963752" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4304783" sideWeight="0.4792111" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3147942" sideWeight="0.82036245" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3147942" sideWeight="0.82036245" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2829,26 +2819,26 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ndg/intel/fashionconcierge/UserAuthActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7329932" vertical-offset="1898" max-vertical-offset="4658">
-          <caret line="137" column="8" selection-start-line="137" selection-start-column="8" selection-end-line="137" selection-end-column="8" />
+          <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2138#2168#0" expanded="true" />
             <element signature="e#2268#2296#0" expanded="true" />
-            <element signature="e#5690#5811#0" expanded="true" />
-            <element signature="e#5800#5801#0" expanded="true" />
-            <element signature="e#6240#6272#0" expanded="true" />
-            <element signature="e#6316#6352#0" expanded="true" />
-            <element signature="e#7211#7240#0" expanded="true" />
-            <element signature="e#7280#7313#0" expanded="true" />
-            <element signature="e#7648#7677#0" expanded="true" />
-            <element signature="e#7709#7736#0" expanded="true" />
-            <element signature="e#7791#7792#0" expanded="true" />
-            <element signature="e#7825#7826#0" expanded="true" />
-            <element signature="e#7863#7864#0" expanded="true" />
-            <element signature="e#7898#7899#0" expanded="true" />
-            <element signature="e#8210#8264#0" expanded="true" />
-            <element signature="e#8750#8758#0" expanded="true" />
-            <element signature="e#9035#9089#0" expanded="true" />
+            <element signature="e#5682#5803#0" expanded="true" />
+            <element signature="e#5792#5793#0" expanded="true" />
+            <element signature="e#6232#6264#0" expanded="true" />
+            <element signature="e#6308#6344#0" expanded="true" />
+            <element signature="e#7203#7232#0" expanded="true" />
+            <element signature="e#7272#7305#0" expanded="true" />
+            <element signature="e#7640#7669#0" expanded="true" />
+            <element signature="e#7701#7728#0" expanded="true" />
+            <element signature="e#7783#7784#0" expanded="true" />
+            <element signature="e#7817#7818#0" expanded="true" />
+            <element signature="e#7855#7856#0" expanded="true" />
+            <element signature="e#7890#7891#0" expanded="true" />
+            <element signature="e#8202#8256#0" expanded="true" />
+            <element signature="e#8742#8750#0" expanded="true" />
+            <element signature="e#9027#9081#0" expanded="true" />
           </folding>
         </state>
       </provider>
