@@ -23,29 +23,22 @@ import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.helper.StaticLabelsFormatter;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
-import com.jjoe64.graphview.series.Series;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.lang.reflect.Array;
-import java.security.Timestamp;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.Date;
-import java.util.HashSet;
 import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.Set;
 import java.util.UUID;
+
 
 enum HRMSensorState {
     NOT_READY,
     READY,
     PROCESS,
-    DONE
+    SUCCESS,
+    FAIL
 };
 
 public class UserAuthActivity extends ActionBarActivity implements SensorEventListener {
@@ -167,11 +160,94 @@ public class UserAuthActivity extends ActionBarActivity implements SensorEventLi
         Handler handler = new Handler();
         final Runnable r = new Runnable() {
             public void run() {
-                mHrmState = HRMSensorState.DONE;
+                matchUserProfile();
             }
         };
 
         handler.postDelayed(r, 10000);
+    }
+
+    private void matchUserProfile() {
+
+        double savedHRMProfile[] = new double[] {74.28806, 74.80511, 76.07594, 77.69099,
+                                                 79.06474, 80.16972, 80.84673, 81.23549,
+                                                 81.20487, 80.73627, 80.39274, 80.1198,
+                                                 80.16982};
+        double currentHRMProfile[] = new double[] {77.5737, 77.39081, 78.73197, 79.89495,
+                                                   80.743576, 80.90538, 80.761986, 80.37992,
+                                                   79.92841, 79.84282, 79.797615, 79.88893,
+                                                   80.02692};
+
+        if (corr(savedHRMProfile, currentHRMProfile) > 0.5) {
+            mHrmState = HRMSensorState.SUCCESS;
+        }
+        else {
+            mHrmState = HRMSensorState.FAIL;
+        }
+    }
+
+    /**
+     * Execute the cross correlation between signal x1 and x2 and calculate the time delay.
+     */
+    public double corr(double[] x1, double[] x2)
+    {
+        // define the size of the resulting correlation array
+        int corrSize = 2*x1.length;
+
+        // create correlation array
+        double out[] = new double[corrSize];
+
+        // shift variable
+        int shift = x1.length;
+
+        double val;
+        int maxIndex = 0;
+        int delay = 0;
+        double maxVal = 0;
+
+        // we have push the signal from the left to the right
+        for(int i=0; i < corrSize; i++)
+        {
+            val = 0;
+
+            // multiply sample by sample and sum up
+            for(int k=0; k < x1.length; k++)
+            {
+                // x2 has reached his end - abort
+                if((k+shift) > (x2.length -1))
+                {
+                    break;
+                }
+
+                // x2 has not started yet - continue
+                if((k+shift) < 0)
+                {
+                    continue;
+                }
+
+                // multiply sample with sample and sum up
+                val += x1[k] * x2[k+shift];
+
+                //System.out.print("x1["+k+"] * x2["+(k+tmp_tau)+"] + ");
+            }
+
+            //System.out.println();
+            // save the sample
+            out[i] = val;
+            shift--;
+
+            // save highest correlation index
+            if(out[i] > maxVal)
+            {
+                maxVal = out[i];
+                maxIndex = i;
+            }
+        }
+
+        // set the delay
+        delay = maxIndex - x1.length;
+
+        return maxVal;
     }
 
     @Override
@@ -197,14 +273,19 @@ public class UserAuthActivity extends ActionBarActivity implements SensorEventLi
                 // Finish measurements in 10 seconds
                 delayedStopHRM();
                 break;
-            case DONE:
+            case SUCCESS:
                 // Unregister HRM sensor listener
                 mSensorManager.unregisterListener(this);
-                mUserAuthState.setText(R.string.user_auth_state_done);
-                mUserAuthMsg.setText(R.string.user_auth_state_done_msg);
-
-                saveHRMProfile();
-                logHRMProfile();
+                mUserAuthState.setText(R.string.user_auth_state_success);
+                mUserAuthMsg.setText(R.string.user_auth_state_success_msg);
+                //saveHRMProfile();
+                //logHRMProfile();
+                break;
+            case FAIL:
+                mUserAuthState.setText(R.string.user_auth_state_fail);
+                mUserAuthMsg.setText(R.string.user_auth_state_fail_msg);
+                //saveHRMProfile();
+                //logHRMProfile();
                 break;
         }
     }

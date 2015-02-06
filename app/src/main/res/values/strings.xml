@@ -15,8 +15,11 @@
     <string name="user_auth_state_process">AUTHENTICATING...</string>
     <string name="user_auth_state_process_msg">Stay still and quite</string>
 
-    <string name="user_auth_state_done">AUTHENTICATION COMPLETE</string>
-    <string name="user_auth_state_done_msg">Take your finger off the HRM sensor</string>
+    <string name="user_auth_state_success">AUTHENTICATION COMPLETED</string>
+    <string name="user_auth_state_success_msg">Take your finger off the HRM sensor</string>
+
+    <string name="user_auth_state_fail">AUTHENTICATION FAILED</string>
+    <string name="user_auth_state_fail_msg">Please try again</string>
 
     <string name="user_auth_bpm_profile">user_bpm_profile</string>
 
