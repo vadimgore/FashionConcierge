@@ -191,63 +191,9 @@ public class UserAuthActivity extends ActionBarActivity implements SensorEventLi
      */
     public double corr(double[] x1, double[] x2)
     {
-        // define the size of the resulting correlation array
-        int corrSize = 2*x1.length;
+        //use http://commons.apache.org/proper/commons-math/userguide/stat.html#a1.7_Covariance_and_correlation
 
-        // create correlation array
-        double out[] = new double[corrSize];
-
-        // shift variable
-        int shift = x1.length;
-
-        double val;
-        int maxIndex = 0;
-        int delay = 0;
-        double maxVal = 0;
-
-        // we have push the signal from the left to the right
-        for(int i=0; i < corrSize; i++)
-        {
-            val = 0;
-
-            // multiply sample by sample and sum up
-            for(int k=0; k < x1.length; k++)
-            {
-                // x2 has reached his end - abort
-                if((k+shift) > (x2.length -1))
-                {
-                    break;
-                }
-
-                // x2 has not started yet - continue
-                if((k+shift) < 0)
-                {
-                    continue;
-                }
-
-                // multiply sample with sample and sum up
-                val += x1[k] * x2[k+shift];
-
-                //System.out.print("x1["+k+"] * x2["+(k+tmp_tau)+"] + ");
-            }
-
-            //System.out.println();
-            // save the sample
-            out[i] = val;
-            shift--;
-
-            // save highest correlation index
-            if(out[i] > maxVal)
-            {
-                maxVal = out[i];
-                maxIndex = i;
-            }
-        }
-
-        // set the delay
-        delay = maxIndex - x1.length;
-
-        return maxVal;
+        return 0;
     }
 
     @Override

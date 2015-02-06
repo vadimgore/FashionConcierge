@@ -43,7 +43,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4a9e930c-783b-40bf-833d-2028d09e5750" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ndg/intel/fashionconcierge/UserAuthActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ndg/intel/fashionconcierge/UserAuthActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Fashion Concierge.iws" />
@@ -88,29 +87,29 @@
       <file leaf-file-name="UserAuthActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ndg/intel/fashionconcierge/UserAuthActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2172043" vertical-offset="2653" max-vertical-offset="6035">
-              <caret line="162" column="35" selection-start-line="162" selection-start-column="35" selection-end-line="162" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.10967742" vertical-offset="3230" max-vertical-offset="5117">
+              <caret line="193" column="111" selection-start-line="193" selection-start-column="111" selection-end-line="193" selection-end-column="111" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1891#1921#0" expanded="true" />
                 <element signature="e#2021#2049#0" expanded="true" />
                 <element signature="e#5435#5543#0" expanded="true" />
                 <element signature="e#5532#5533#0" expanded="true" />
-                <element signature="e#8512#8544#0" expanded="true" />
-                <element signature="e#8588#8624#0" expanded="true" />
-                <element signature="e#9486#9518#0" expanded="true" />
-                <element signature="e#9558#9594#0" expanded="true" />
-                <element signature="e#9753#9782#0" expanded="true" />
-                <element signature="e#9822#9855#0" expanded="true" />
-                <element signature="e#10193#10222#0" expanded="true" />
-                <element signature="e#10254#10281#0" expanded="true" />
-                <element signature="e#10336#10337#0" expanded="true" />
-                <element signature="e#10370#10371#0" expanded="true" />
-                <element signature="e#10408#10409#0" expanded="true" />
-                <element signature="e#10443#10444#0" expanded="true" />
-                <element signature="e#10755#10809#0" expanded="true" />
-                <element signature="e#11295#11303#0" expanded="true" />
-                <element signature="e#11580#11634#0" expanded="true" />
+                <element signature="e#7173#7205#0" expanded="true" />
+                <element signature="e#7249#7285#0" expanded="true" />
+                <element signature="e#8147#8179#0" expanded="true" />
+                <element signature="e#8219#8255#0" expanded="true" />
+                <element signature="e#8414#8443#0" expanded="true" />
+                <element signature="e#8483#8516#0" expanded="true" />
+                <element signature="e#8854#8883#0" expanded="true" />
+                <element signature="e#8915#8942#0" expanded="true" />
+                <element signature="e#8997#8998#0" expanded="true" />
+                <element signature="e#9031#9032#0" expanded="true" />
+                <element signature="e#9069#9070#0" expanded="true" />
+                <element signature="e#9104#9105#0" expanded="true" />
+                <element signature="e#9416#9470#0" expanded="true" />
+                <element signature="e#9956#9964#0" expanded="true" />
+                <element signature="e#10241#10295#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2296,12 +2295,16 @@
       <created>1423196217885</created>
       <updated>1423196217885</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fashion Concierge&#10;">
+      <created>1423210290014</created>
+      <updated>1423210290014</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2316,7 +2319,7 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4204672" sideWeight="0.17963752" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4304783" sideWeight="0.4792111" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4204672" sideWeight="0.82036245" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4204672" sideWeight="0.82036245" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2397,13 +2400,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/ndg/intel/fashionconcierge/UserAuthActivity.java</url>
-          <line>309</line>
+          <line>255</line>
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/ndg/intel/fashionconcierge/UserAuthActivity.java</url>
-          <line>341</line>
+          <line>287</line>
           <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
@@ -2413,6 +2416,12 @@
           <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/ndg/intel/fashionconcierge/UserAuthActivity.java</url>
+          <line>195</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/ndg/intel/fashionconcierge/UserAuthActivity.java</url>
           <line>45</line>
@@ -2420,7 +2429,7 @@
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="26" />
+      <option name="time" value="27" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -2832,29 +2841,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ndg/intel/fashionconcierge/UserAuthActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2172043" vertical-offset="2653" max-vertical-offset="6035">
-          <caret line="162" column="35" selection-start-line="162" selection-start-column="35" selection-end-line="162" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.10967742" vertical-offset="3230" max-vertical-offset="5117">
+          <caret line="193" column="111" selection-start-line="193" selection-start-column="111" selection-end-line="193" selection-end-column="111" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1891#1921#0" expanded="true" />
             <element signature="e#2021#2049#0" expanded="true" />
             <element signature="e#5435#5543#0" expanded="true" />
             <element signature="e#5532#5533#0" expanded="true" />
-            <element signature="e#8512#8544#0" expanded="true" />
-            <element signature="e#8588#8624#0" expanded="true" />
-            <element signature="e#9486#9518#0" expanded="true" />
-            <element signature="e#9558#9594#0" expanded="true" />
-            <element signature="e#9753#9782#0" expanded="true" />
-            <element signature="e#9822#9855#0" expanded="true" />
-            <element signature="e#10193#10222#0" expanded="true" />
-            <element signature="e#10254#10281#0" expanded="true" />
-            <element signature="e#10336#10337#0" expanded="true" />
-            <element signature="e#10370#10371#0" expanded="true" />
-            <element signature="e#10408#10409#0" expanded="true" />
-            <element signature="e#10443#10444#0" expanded="true" />
-            <element signature="e#10755#10809#0" expanded="true" />
-            <element signature="e#11295#11303#0" expanded="true" />
-            <element signature="e#11580#11634#0" expanded="true" />
+            <element signature="e#7173#7205#0" expanded="true" />
+            <element signature="e#7249#7285#0" expanded="true" />
+            <element signature="e#8147#8179#0" expanded="true" />
+            <element signature="e#8219#8255#0" expanded="true" />
+            <element signature="e#8414#8443#0" expanded="true" />
+            <element signature="e#8483#8516#0" expanded="true" />
+            <element signature="e#8854#8883#0" expanded="true" />
+            <element signature="e#8915#8942#0" expanded="true" />
+            <element signature="e#8997#8998#0" expanded="true" />
+            <element signature="e#9031#9032#0" expanded="true" />
+            <element signature="e#9069#9070#0" expanded="true" />
+            <element signature="e#9104#9105#0" expanded="true" />
+            <element signature="e#9416#9470#0" expanded="true" />
+            <element signature="e#9956#9964#0" expanded="true" />
+            <element signature="e#10241#10295#0" expanded="true" />
           </folding>
         </state>
       </provider>
