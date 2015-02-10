@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <translate xmlns:android="http://schemas.android.com/apk/res/android"
     android:fromYDelta="100%p" android:toYDelta="0%p"
-    android:duration="@android:integer/config_longAnimTime"/><!-- From: file:/C:/Users/Vadim/Documents/GitHub/FashionConcierge/bleshSDKLib/src/main/res/anim/slide_in_up.xml --><!-- From: file:/C:/Users/Vadim/Documents/GitHub/FashionConcierge/bleshSDKLib/build/intermediates/bundles/debug/res/anim/slide_in_up.xml -->
+    android:duration="@android:integer/config_longAnimTime"/><!-- From: file:/C:/Users/vgore/Documents/GitHub/FashionConcierge/bleshSDKLib/src/main/res/anim/slide_in_up.xml --><!-- From: file:/C:/Users/vgore/Documents/GitHub/FashionConcierge/bleshSDKLib/build/intermediates/bundles/debug/res/anim/slide_in_up.xml -->
