@@ -58,11 +58,11 @@ public class MainActivity extends ActionBarActivity {
         // Register Blesh callback
         BleshInstance.sharedInstance().setTemplateResult(result);
 
-        // Start Blesh service
-        //startBlesh();
+        //Start Blesh service
+        startBlesh();
 
-        userAuth = new Intent(this, UserAuthActivity.class);
-        startActivity(userAuth);
+        //userAuth = new Intent(this, UserAuthActivity.class);
+        //startActivity(userAuth);
     }
 
 
@@ -89,13 +89,17 @@ public class MainActivity extends ActionBarActivity {
     }
 
     @Override
-    protected void onResume() {
+    protected void onStart() {
 
-        super.onResume();
+        super.onStart();
         // Make sure Bluetooch is enabled
         enableBluetooth();
+    }
 
-        startActivity(userAuth);
+    @Override
+    protected void onStop() {
+
+        super.onStop();
     }
 
     @Override

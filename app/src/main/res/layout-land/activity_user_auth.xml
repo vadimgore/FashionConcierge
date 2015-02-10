@@ -26,7 +26,7 @@
     </TextView>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:background="@color/white"
@@ -35,22 +35,37 @@
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp">
 
-    <ImageView
-        android:id="@+id/user_auth_image"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_gravity="left"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:scaleType="center">
-    </ImageView>
+        <ImageView
+            android:id="@+id/user_auth_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="left"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center">
+        </ImageView>
 
-    <com.jjoe64.graphview.GraphView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="10dp"
-        android:id="@+id/graph" />
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
 
+            <com.jjoe64.graphview.GraphView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/graph" />
+
+            <TextView
+                android:id="@+id/user_auth_confidence"
+                android:gravity="center_horizontal"
+                android:textSize="50px"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/red">
+            </TextView>
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>

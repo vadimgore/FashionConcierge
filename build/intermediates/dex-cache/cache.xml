@@ -2,18 +2,11 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\classes.jar"
+        jar="C:\Users\vgore\Documents\GitHub\FashionConcierge\commons-math3-3.4.1\commons-math3-3.4.1.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
-        <dex dex="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\build\intermediates\pre-dexed\debug\classes-99e41d17f104f78dceff144694078bd2d639f7e9.jar" />
-    </item>
-    <item
-        jar="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\build\intermediates\exploded-aar\com.jjoe64\graphview\4.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="ae24ad61a573cd1faf8261f5ec6d8f0cb58ddaad">
-        <dex dex="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\build\intermediates\pre-dexed\debug\classes-6c28dc428a9556765738b855c6eb6cbe6b5d16dc.jar" />
+        sha1="3ac44a8664228384bc68437264cf7c4cf112f579">
+        <dex dex="C:\Users\vgore\Documents\GitHub\FashionConcierge\app\build\intermediates\pre-dexed\debug\commons-math3-3.4.1-631e921eeaa45feb5e6c66db956a83bfb8f78ac1.jar" />
     </item>
 
 </items>

@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':commons-math3-3.4.1'
 include ':bleshSDKLib'

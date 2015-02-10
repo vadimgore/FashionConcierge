@@ -21,6 +21,10 @@
     <string name="user_auth_state_fail">AUTHENTICATION FAILED</string>
     <string name="user_auth_state_fail_msg">Please try again</string>
 
+    <string name="user_auth_confidence_level">Confidence</string>
+
     <string name="user_auth_bpm_profile">user_bpm_profile</string>
+
+    <string name="save_hrm_profile">Save current HRM profile</string>
 
 </resources>

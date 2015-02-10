@@ -4,4 +4,10 @@
     tools:context="com.ndg.intel.fashionconcierge.UserAuthActivity">
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
+
+    <!-- Save profile, should appear as action button -->
+    <item android:id="@+id/action_save_hrm_profile"
+        android:icon="@drawable/save_hrm_profile"
+        android:title="@string/save_hrm_profile"
+        android:showAsAction="ifRoom" />
 </menu>

@@ -36,7 +36,7 @@
 
     <com.jjoe64.graphview.GraphView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
         android:layout_marginLeft="5dp"
@@ -44,5 +44,15 @@
         android:layout_gravity="center"
         android:scaleType="center"
         android:id="@+id/graph" />
+
+    <TextView
+        android:id="@+id/user_auth_confidence"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10px"
+        android:textSize="50px"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/red">
+    </TextView>
 
 </LinearLayout>

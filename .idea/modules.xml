@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/FashionConcierge.iml" filepath="$PROJECT_DIR$/FashionConcierge.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/bleshSDKLib/bleshSDKLib.iml" filepath="$PROJECT_DIR$/bleshSDKLib/bleshSDKLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commons-math3-3.4.1/commons-math3-3.4.1.iml" filepath="$PROJECT_DIR$/commons-math3-3.4.1/commons-math3-3.4.1.iml" />
     </modules>
   </component>
 </project>
