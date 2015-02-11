@@ -7,6 +7,7 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.os.AsyncTask;
 import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
@@ -18,6 +19,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.helper.StaticLabelsFormatter;
@@ -26,10 +28,24 @@ import com.jjoe64.graphview.series.LineGraphSeries;
 
 import org.apache.commons.math3.analysis.function.Min;
 import org.apache.commons.math3.stat.correlation.PearsonsCorrelation;
+import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
+import org.apache.http.StatusLine;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.BufferedInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -127,10 +143,11 @@ public class UserAuthActivity extends ActionBarActivity implements SensorEventLi
     private StoreAssociate getStoreAssociate() {
         StoreAssociate associate = null;
         try {
-            if (getIntent().getStringExtra("JSON") != null) {
+            if (!getIntent().getStringExtra("JSON").isEmpty()) {
                 JSONObject obj = new JSONObject(getIntent().getStringExtra("JSON"));
-                associate = new StoreAssociate(obj.getString("name"),
-                        UUID.fromString(obj.getString("uuid")));
+                if (obj != null)
+                    associate = new StoreAssociate(obj.getJSONObject("associate").getString("name"),
+                                UUID.fromString(obj.getJSONObject("associate").getString("uuid")));
             }
         } catch (JSONException e) {
 
@@ -274,6 +291,7 @@ public class UserAuthActivity extends ActionBarActivity implements SensorEventLi
                 mSensorManager.unregisterListener(this);
                 mUserAuthState.setText(R.string.user_auth_state_success);
                 mUserAuthMsg.setText(R.string.user_auth_state_success_msg);
+                shareFashionProfile();
                 break;
             case FAIL:
                 mSensorManager.unregisterListener(this);
@@ -370,5 +388,54 @@ public class UserAuthActivity extends ActionBarActivity implements SensorEventLi
 
         // Reset timestamp
         timestamp = 0;
+    }
+
+    private void shareFashionProfile() {
+        String user_id = Integer.toString(getHRMProfile().hashCode());
+        String concierge_id = getStoreAssociate().uuid.toString();
+
+        final String apiURL = "http://androidexample.com/media/webservice/httppost.php";
+        new CallAPI().execute(apiURL, user_id, concierge_id);
+    }
+
+    private class CallAPI extends AsyncTask<String, String, String> {
+
+        @Override
+        protected String doInBackground(String... params) {
+            String urlString=params[0]; // URL to call
+            String resultToDisplay = "";
+
+            HttpClient httpclient = new DefaultHttpClient();
+            HttpPost httppost = new HttpPost(urlString);
+            HttpResponse response = null;
+            try {
+                // Add your data
+                List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
+                nameValuePairs.add(new BasicNameValuePair("user_id", params[1]));
+                nameValuePairs.add(new BasicNameValuePair("concierge_id", params[2]));
+                httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+                // Execute HTTP Post Request
+                response = httpclient.execute(httppost);
+                StatusLine status = response.getStatusLine();
+                Log.i("HTTP POST: ", "status=" + Long.toString(status.getStatusCode()) +
+                        " msg: " + status.getReasonPhrase());
+            } catch (ClientProtocolException e) {
+                System.out.println(e.getMessage());
+                return e.getMessage();
+            } catch (IOException e) {
+                System.out.println(e.getMessage());
+                return e.getMessage();
+            } catch (Exception e ) {
+                System.out.println(e.getMessage());
+                return e.getMessage();
+            }
+
+            return response.toString();
+        }
+
+        protected void onPostExecute(String result) {
+            Toast.makeText(getApplicationContext(), "onPostExecute: " + result, Toast.LENGTH_LONG).show();
+        }
+
     }
 }

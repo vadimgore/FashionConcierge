@@ -2,11 +2,67 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\vgore\Documents\GitHub\FashionConcierge\commons-math3-3.4.1\commons-math3-3.4.1.jar"
+        jar="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
+        <dex dex="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\build\intermediates\pre-dexed\debug\classes-99e41d17f104f78dceff144694078bd2d639f7e9.jar" />
+    </item>
+    <item
+        jar="C:\Users\Vadim\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-99108e9b019a4ceb1db16d3ac5d04679cbeed412.jar" />
+    </item>
+    <item
+        jar="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\build\intermediates\exploded-aar\FashionConcierge\bleshSDKLib\unspecified\libs\bleshsdk_pro.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1dbfce4674ccddd3b2997242ee472ce64a37d11f">
+        <dex dex="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\build\intermediates\pre-dexed\debug\bleshsdk_pro-b9e98f1ad4f168a3116cfa7b205f95777d6cad8c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-13a90a27fb882a28af5d5ee31e5d2eb4e964a5f9.jar" />
+    </item>
+    <item
+        jar="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\build\intermediates\pre-dexed\debug\classes-8a421b337281e27290635b22ceba286193163709.jar" />
+    </item>
+    <item
+        jar="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\build\intermediates\exploded-aar\FashionConcierge\bleshSDKLib\unspecified\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="409b4d889767f58d9d91391f9a57a54673619648">
+        <dex dex="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\build\intermediates\pre-dexed\debug\classes-a57c335ac46ca005d60d82c1fdbbc4cab0b038b5.jar" />
+    </item>
+    <item
+        jar="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\build\intermediates\exploded-aar\com.jjoe64\graphview\4.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ae24ad61a573cd1faf8261f5ec6d8f0cb58ddaad">
+        <dex dex="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\build\intermediates\pre-dexed\debug\classes-6c28dc428a9556765738b855c6eb6cbe6b5d16dc.jar" />
+    </item>
+    <item
+        jar="C:\Users\Vadim\Documents\GitHub\FashionConcierge\commons-math3-3.4.1\commons-math3-3.4.1.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="3ac44a8664228384bc68437264cf7c4cf112f579">
-        <dex dex="C:\Users\vgore\Documents\GitHub\FashionConcierge\app\build\intermediates\pre-dexed\debug\commons-math3-3.4.1-631e921eeaa45feb5e6c66db956a83bfb8f78ac1.jar" />
+        <dex dex="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\build\intermediates\pre-dexed\debug\commons-math3-3.4.1-4c1fc82391c57521e8d8708ab1946a009b1a9407.jar" />
+    </item>
+    <item
+        jar="C:\Users\Vadim\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.4\a60a5e993c98c864010053cb901b7eab25306568\gson-2.2.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\build\intermediates\pre-dexed\debug\gson-2.2.4-2b29920b55dbb2f7de4ec6c74bb50aad38ef85ff.jar" />
     </item>
 
 </items>
