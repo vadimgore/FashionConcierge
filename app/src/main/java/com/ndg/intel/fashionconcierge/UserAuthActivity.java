@@ -37,6 +37,7 @@ import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -407,7 +408,9 @@ public class UserAuthActivity extends ActionBarActivity implements SensorEventLi
 
             HttpClient httpclient = new DefaultHttpClient();
             HttpPost httppost = new HttpPost(urlString);
-            HttpResponse response = null;
+            HttpResponse httpresponse = null;
+            String response;
+
             try {
                 // Add your data
                 List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
@@ -415,10 +418,11 @@ public class UserAuthActivity extends ActionBarActivity implements SensorEventLi
                 nameValuePairs.add(new BasicNameValuePair("concierge_id", params[2]));
                 httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
                 // Execute HTTP Post Request
-                response = httpclient.execute(httppost);
-                StatusLine status = response.getStatusLine();
+                httpresponse = httpclient.execute(httppost);
+                StatusLine status = httpresponse.getStatusLine();
                 Log.i("HTTP POST: ", "status=" + Long.toString(status.getStatusCode()) +
                         " msg: " + status.getReasonPhrase());
+                response = status.getReasonPhrase();
             } catch (ClientProtocolException e) {
                 System.out.println(e.getMessage());
                 return e.getMessage();
@@ -430,11 +434,12 @@ public class UserAuthActivity extends ActionBarActivity implements SensorEventLi
                 return e.getMessage();
             }
 
-            return response.toString();
+            return response;
         }
 
         protected void onPostExecute(String result) {
-            Toast.makeText(getApplicationContext(), "onPostExecute: " + result, Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "onPostExecute: response = " + result,
+                    Toast.LENGTH_LONG).show();
         }
 
     }
