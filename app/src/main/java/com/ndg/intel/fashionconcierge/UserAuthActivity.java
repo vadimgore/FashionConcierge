@@ -471,6 +471,7 @@ public class UserAuthActivity extends ActionBarActivity implements SensorEventLi
                     while ((line = reader.readLine()) != null) {
                         builder.append(line);
                     }
+
                     Log.i("Poster", "Your data: " + builder.toString()); //response data
                 } else {
                     Log.e("Poster", "Failed with error: " + statusLine.getReasonPhrase());
