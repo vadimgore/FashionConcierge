@@ -28,12 +28,14 @@ import com.jjoe64.graphview.series.LineGraphSeries;
 
 import org.apache.commons.math3.analysis.function.Min;
 import org.apache.commons.math3.stat.correlation.PearsonsCorrelation;
+import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.StatusLine;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
@@ -42,8 +44,10 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedInputStream;
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
@@ -240,7 +244,7 @@ public class UserAuthActivity extends ActionBarActivity implements SensorEventLi
 
         double confidence = corr(dSavedProfile, dCurrentProfile);
         displayConfidence(confidence);
-        if (confidence < 0.5) {
+        if (confidence < 0) {
             mHrmState = HRMSensorState.FAIL;
             return;
         }
@@ -391,20 +395,61 @@ public class UserAuthActivity extends ActionBarActivity implements SensorEventLi
     }
 
     private void shareFashionProfile() {
-        String user_id = Integer.toString(getHRMProfile().hashCode());
+        String user_id = "1234";//Integer.toString(getHRMProfile().hashCode());
         String concierge_id = getStoreAssociate().uuid.toString();
 
-        final String apiURL = "http://androidexample.com/media/webservice/httppost.php";
-        new CallAPI().execute(apiURL, user_id, concierge_id);
+        //final String apiURL = "http://ec2-54-213-221-18.us-west-2.compute.amazonaws.com:8080";
+        final String url = "http://54.213.221.18:8080";
+        //new CallAPI().execute(apiURL, user_id, concierge_id);
+        new HttpPoster().execute(url, user_id, concierge_id);
     }
 
-    private class CallAPI extends AsyncTask<String, String, String> {
+    private class HttpGetter extends AsyncTask<String, String, String> {
+
+        @Override
+        protected String doInBackground(String... params) {
+            // TODO Auto-generated method stub
+            StringBuilder builder = new StringBuilder();
+            HttpClient client = new DefaultHttpClient();
+            HttpGet httpGet = new HttpGet(params[0]);
+
+            try {
+                HttpResponse response = client.execute(httpGet);
+                StatusLine statusLine = response.getStatusLine();
+                int statusCode = statusLine.getStatusCode();
+                if (statusCode == 200) {
+                    HttpEntity entity = response.getEntity();
+                    InputStream content = entity.getContent();
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(content));
+                    String line;
+                    while ((line = reader.readLine()) != null) {
+                        builder.append(line);
+                    }
+                    Log.i("Getter", "Your data: " + builder.toString()); //response data
+                } else {
+                    Log.e("Getter", "Failed with error: " + statusLine.getReasonPhrase());
+                }
+            } catch (ClientProtocolException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            return builder.toString();
+        }
+
+        protected void onPostExecute(String result) {
+            Toast.makeText(getApplicationContext(), "onPostExecute: " + result, Toast.LENGTH_LONG).show();
+        }
+    }
+
+    private class HttpPoster extends AsyncTask<String, String, String> {
 
         @Override
         protected String doInBackground(String... params) {
             String urlString=params[0]; // URL to call
-            String resultToDisplay = "";
 
+            StringBuilder builder = new StringBuilder();
             HttpClient httpclient = new DefaultHttpClient();
             HttpPost httppost = new HttpPost(urlString);
             HttpResponse response = null;
@@ -413,12 +458,23 @@ public class UserAuthActivity extends ActionBarActivity implements SensorEventLi
                 List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
                 nameValuePairs.add(new BasicNameValuePair("user_id", params[1]));
                 nameValuePairs.add(new BasicNameValuePair("concierge_id", params[2]));
-                httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+                httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs, "UTF-8"));
                 // Execute HTTP Post Request
                 response = httpclient.execute(httppost);
-                StatusLine status = response.getStatusLine();
-                Log.i("HTTP POST: ", "status=" + Long.toString(status.getStatusCode()) +
-                        " msg: " + status.getReasonPhrase());
+                StatusLine statusLine = response.getStatusLine();
+                int statusCode = statusLine.getStatusCode();
+                if (statusCode == 200) {
+                    HttpEntity entity = response.getEntity();
+                    InputStream content = entity.getContent();
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(content));
+                    String line;
+                    while ((line = reader.readLine()) != null) {
+                        builder.append(line);
+                    }
+                    Log.i("Poster", "Your data: " + builder.toString()); //response data
+                } else {
+                    Log.e("Poster", "Failed with error: " + statusLine.getReasonPhrase());
+                }
             } catch (ClientProtocolException e) {
                 System.out.println(e.getMessage());
                 return e.getMessage();
@@ -430,7 +486,7 @@ public class UserAuthActivity extends ActionBarActivity implements SensorEventLi
                 return e.getMessage();
             }
 
-            return response.toString();
+            return builder.toString();
         }
 
         protected void onPostExecute(String result) {
