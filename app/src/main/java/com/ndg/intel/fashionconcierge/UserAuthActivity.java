@@ -399,7 +399,7 @@ public class UserAuthActivity extends ActionBarActivity implements SensorEventLi
         String concierge_id = getStoreAssociate().uuid.toString();
 
         //final String apiURL = "http://ec2-54-213-221-18.us-west-2.compute.amazonaws.com:8080";
-        final String url = "http://54.213.221.18:8080";
+        final String url = "http://ec2-54-148-199-2.us-west-2.compute.amazonaws.com:8080";
         //new CallAPI().execute(apiURL, user_id, concierge_id);
         new HttpPoster().execute(url, user_id, concierge_id);
     }
@@ -471,7 +471,6 @@ public class UserAuthActivity extends ActionBarActivity implements SensorEventLi
                     while ((line = reader.readLine()) != null) {
                         builder.append(line);
                     }
-
                     Log.i("Poster", "Your data: " + builder.toString()); //response data
                 } else {
                     Log.e("Poster", "Failed with error: " + statusLine.getReasonPhrase());
