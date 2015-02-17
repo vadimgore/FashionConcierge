@@ -155,6 +155,8 @@ public class UserAuthActivity extends ActionBarActivity implements SensorEventLi
             }
         } catch (JSONException e) {
 
+        } catch (RuntimeException e) {
+            associate = new StoreAssociate("Jane",UUID.fromString("39ed3f82-ab30-11e4-89d3-123b93f75cba"));
         }
 
         return associate;
@@ -399,7 +401,7 @@ public class UserAuthActivity extends ActionBarActivity implements SensorEventLi
         String concierge_id = getStoreAssociate().uuid.toString();
 
         //final String apiURL = "http://ec2-54-213-221-18.us-west-2.compute.amazonaws.com:8080";
-        final String url = "http://ec2-54-148-199-2.us-west-2.compute.amazonaws.com:8080";
+        final String url = "http://ec2-52-10-19-66.us-west-2.compute.amazonaws.com:8080";
         //new CallAPI().execute(apiURL, user_id, concierge_id);
         new HttpPoster().execute(url, user_id, concierge_id);
     }

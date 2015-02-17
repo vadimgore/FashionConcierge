@@ -9,13 +9,6 @@
         <dex dex="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\build\intermediates\pre-dexed\debug\classes-99e41d17f104f78dceff144694078bd2d639f7e9.jar" />
     </item>
     <item
-        jar="C:\Users\Vadim\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-99108e9b019a4ceb1db16d3ac5d04679cbeed412.jar" />
-    </item>
-    <item
         jar="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\build\intermediates\exploded-aar\FashionConcierge\bleshSDKLib\unspecified\libs\bleshsdk_pro.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -40,7 +33,7 @@
         jar="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\build\intermediates\exploded-aar\FashionConcierge\bleshSDKLib\unspecified\classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="409b4d889767f58d9d91391f9a57a54673619648">
+        sha1="afa3c5994e4792d3b2e91953fd0693093e496e1a">
         <dex dex="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\build\intermediates\pre-dexed\debug\classes-a57c335ac46ca005d60d82c1fdbbc4cab0b038b5.jar" />
     </item>
     <item
@@ -63,6 +56,13 @@
         revision="21.1.2"
         sha1="a60a5e993c98c864010053cb901b7eab25306568">
         <dex dex="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\build\intermediates\pre-dexed\debug\gson-2.2.4-2b29920b55dbb2f7de4ec6c74bb50aad38ef85ff.jar" />
+    </item>
+    <item
+        jar="C:\Users\Vadim\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\Vadim\Documents\GitHub\FashionConcierge\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-99108e9b019a4ceb1db16d3ac5d04679cbeed412.jar" />
     </item>
 
 </items>
